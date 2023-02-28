@@ -1,0 +1,302 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: century;
+}
+
+header{
+    background-image: linear-gradient(rgba(225, 220, 200, 0),rgba(225, 220, 220, 0),rgba(0,0,0,0.5)), url(./Images/Solid_white.svg.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+}
+ul{
+    float: left;
+    list-style-type: none;
+    margin-top: 30px;
+    min-height: 400px;
+    margin-right: 40px;
+    font-size: 17px;
+    margin-left: 30px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+}
+
+ul li a:hover{
+    background-color: black;
+    color: white;
+}
+ul li.active a{
+    background-color: black;
+    color: white;
+}
+.logo img{
+    float: left;
+    width: 150px;
+    height: 80px;
+    padding-top: 5px;
+}
+@media screen and (max-width: 770px){
+    .logo img{
+        flex-basis: 100%;
+    }
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+@media screen and (max-width: 770px){
+    .main{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+}
+.title{
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-70%,-30%);
+}
+@media screen and (max-width: 770px){
+    .title{
+        flex-basis: 100%;
+    }
+}
+
+.title h1{
+    color: black;
+    font-size: 50px;
+}
+@media screen and (max-width: 770px){
+    .title h1{
+        flex-basis: 100%;
+    }
+}
+.button{
+    position: absolute;
+    top: 74%;
+    left: 25%;
+    transform: translate(-70%,-30%);
+}
+.btn{
+    border: 1px solid black;
+    padding: 5px 20px;
+    color: black;
+    transition: 0.5 ease;
+    font-size: 18px;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+.sub-nav{
+    display: none;
+    top: 6%;
+    position: relative;
+    border-radius: 2px solid;
+}
+@media screen and (max-width: 770px){
+    .sub-nav{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+}
+.sub-nav ul{
+    position: absolute;
+}
+.main ul li:hover .sub-nav{
+    display: block;
+    position: absolute;
+    background-color: black;
+    margin-top: 12px;
+    margin-right: 8px;
+}
+.main ul li:hover .sub-nav ul{
+    display: block;
+    margin: 6px;
+}
+.main ul li:hover .sub-nav ul li{
+    width: 75px;
+    padding: 5px;
+    border-bottom: 1px black;
+    background: transparent;
+    transition: 0.4 ease;
+    text-align: left;
+    border-radius: 0px;
+}
+.more{
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    min-height: 400px;
+    margin-right: 40px;
+    font-size: 17px;
+    margin-left: 30px; 
+}
+@media screen and (max-width: 770px){
+    .more{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+        position: '';
+        float: right;
+        margin-bottom: 100px;
+    }
+}
+.btn1{
+    border: 1px solid black;
+    padding: 5px 20px;
+    color: black;
+    transition: 0.5 ease;
+    font-size: 18px;
+    text-decoration: none;
+}
+.btn2{
+    border: 1px solid black;
+    padding: 5px 20px;
+    background-color: black;
+    color: white;
+    transition: 0.5 ease;
+    font-size: 18px;
+    text-decoration: none;
+}
+.btn1:hover{
+    background-color: black;
+    color: white;
+}
+h1{
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+p{
+    float: left;
+    margin-left: 40px;
+    margin-top: 1px;
+}
+.image{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    left: 500px;
+    padding: 25px;
+    padding-bottom: '';
+    display: block;
+}
+@media screen and (max-width: 770px){
+    .image{
+        display: block;
+        display: flex;
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+}
+.tdlist{
+    position: fixed;
+    margin: auto;
+    align-items: top;
+    padding-block-start: 2px;
+    align-content: flex-start;
+}
+.calender{
+    position: fixed;
+    margin: auto;
+    align-items: top;
+    padding-block-start: 2px;
+    align-content: flex-start;
+}
+.remind{
+    position: fixed;
+    margin: auto;
+    align-items: top;
+    padding-block-start: 2px;
+    align-content: flex-start;
+}
+.plan{
+    position: fixed;
+    margin: auto;
+    align-items: top;
+    padding-block-start: 2px;
+    align-content: flex-start;
+}
+.ulfeatures{
+    padding: 4px;
+    scroll-padding: 5px;
+    border: cover;
+    position: absolute;
+}
+.history{
+    position: fixed;
+    margin: auto;
+    align-items: top;
+    padding-block-start: 2px;
+    align-content: flex-start;
+}
+.team{
+    position: fixed;
+    margin: auto;
+    align-items: top;
+    padding-block-start: 2px;
+    align-content: flex-start;
+}
+.blog{
+    position: fixed;
+    margin: auto;
+    align-items: top;
+    padding-block-start: 2px;
+    align-content: flex-start;
+}
+@media screen and (max-width: 770px){
+    header{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 770px){
+    ul{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 770px){
+    ul li{
+        width: 100%;
+        flex-basis: 100%;
+        
+    }
+}
+@media screen and (max-width: 770px){
+    .h1{
+        flex-basis: 100%;
+        width: 100%;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .btn2{
+        flex-basis: 100%;
+        float: right;
+        width: 50%;
+    }
+}
+@media screen and (max-width: 770px){
+    .btn1{
+        flex-basis: 100%;
+        float: right;
+        width: 50%;
+    }
+}
